@@ -4,6 +4,8 @@
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 </ul>
+
+<!-- Version 1 -->
 <!-- <h2>{{hero.name | uppercase}} Details</h2>
 <div><span>id: </span>{{hero.id}}</div>
 <div>
@@ -11,7 +13,9 @@
     <input [(ngModel)]="hero.name" placeholder="name">
   </label>
 </div> -->
-<div *ngIf="selectedHero">
+
+<!-- Version 2 -->
+<!-- <div *ngIf="selectedHero">
   <h2>{{selectedHero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{selectedHero.id}}</div>
   <div>
@@ -19,4 +23,7 @@
       <input [(ngModel)]="selectedHero.name" placeholder="name">
     </label>
   </div>
-</div>
+</div> -->
+
+<!-- Version 3 -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
