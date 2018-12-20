@@ -1,4 +1,10 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<!-- <app-heroes></app-heroes> -->
+<!-- Repalce the app-heroes element with a router-outlet element -->
+<router-outlet></router-outlet>
 <!-- Display the generated MessagesComponent -->
 <app-messages></app-messages>
